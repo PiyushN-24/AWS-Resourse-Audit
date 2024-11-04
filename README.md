@@ -1,10 +1,10 @@
-# AWS Resource Lister
+# AWS Resource Audit
 
 ![AWS](https://img.shields.io/badge/AWS-Cloud-orange?logo=amazon-aws&style=flat-square) 
 ![Shell Script](https://img.shields.io/badge/Script-Bash-blue?style=flat-square)
 
 ## Overview
-**AWS Resource Lister** is a shell script that automates the process of listing various AWS resources across multiple services in a specified region. This tool is ideal for auditing and keeping track of resources such as EC2 instances, S3 buckets, VPCs, and more.
+**AWS Resource Audit** is a shell script that automates the process of listing various AWS resources across multiple services in a specified region. This tool is ideal for auditing and keeping track of resources such as EC2 instances, S3 buckets, VPCs, and more.
 
 ## Features
 - Lists resources from multiple AWS services:
@@ -20,7 +20,7 @@
 - AWS credentials configured (use `aws configure` to set up access keys and default region).
 
 ## Usage
-./aws_resource_list.sh <aws_region> <aws_service|all>
+./GET_aws_resource_audit.sh <aws_region> <aws_service|all>
 
 ## Arguments
 - <aws_region>: AWS region code (e.g., us-east-1, eu-west-1).
@@ -29,11 +29,11 @@
 ## Examples
 List EC2 Instances in us-east-1:
 ```bash
-  ./aws_resource_list.sh us-east-1 ec2
+  ./GET_aws_resource_audit.sh us-east-1 ec2
 ```
 List all resources in us-west-2:
 ```bash
-  ./aws_resource_list.sh us-west-2 all
+  ./GET_aws_resource_audit.sh us-west-2 all
 ```
 ## Supported Services
 The script supports the following AWS services:
@@ -48,7 +48,7 @@ The script supports the following AWS services:
 
 For a complete list of supported services and usage instructions, run:
 ```bash
-./aws_resource_list.sh --help
+./GET_aws_resource_audit.sh --help
 ```
 ## Output
 
