@@ -20,7 +20,6 @@
 - AWS credentials configured (use `aws configure` to set up access keys and default region).
 
 ## Usage
-```bash
 ./aws_resource_list.sh <aws_region> <aws_service|all>
 
 ## Arguments
