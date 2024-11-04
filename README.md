@@ -23,26 +23,20 @@
 ```bash
 ./aws_resource_list.sh <aws_region> <aws_service|all>
 
-Arguments
+## Arguments
 
     <aws_region>: AWS region code (e.g., us-east-1, eu-west-1).
     <aws_service>: (Optional) AWS service to list resources for. Use all to list resources for all supported services.
 
-Examples
+## Examples
 
     List EC2 Instances in us-east-1:
+	./aws_resource_list.sh us-east-1 ec2
 
-    bash
+    List all resources in us-west-2:
+	./aws_resource_list.sh us-west-2 all
 
-./aws_resource_list.sh us-east-1 ec2
-
-List all resources in us-west-2:
-
-bash
-
-    ./aws_resource_list.sh us-west-2 all
-
-Supported Services
+## Supported Services
 
 The script supports the following AWS services:
 
@@ -57,18 +51,15 @@ The script supports the following AWS services:
 
 For a complete list of supported services and usage instructions, run:
 
-bash
-
 ./aws_resource_list.sh --help
 
-Output
+## Output
 
 The script outputs JSON-formatted data for each service, making it easy to analyze or save to a file.
 
 Example Output for EC2 Instances:
 
-json
-
+bash
 {
   "Reservations": [
     {
@@ -87,13 +78,13 @@ json
   ]
 }
 
-Troubleshooting
+## Troubleshooting
 
     AWS CLI Not Installed: Make sure the AWS CLI is installed and accessible in your PATH.
     AWS CLI Not Configured: Run aws configure to set up your AWS credentials.
     Invalid Service: Check the list of supported services in this README or by using the --help flag.
 
-Contributing
+## Contributing
 
 Contributions, issues, and feature requests are welcome! Please feel free to submit a pull request or open an issue.
 License
