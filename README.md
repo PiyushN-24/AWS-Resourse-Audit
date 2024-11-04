@@ -30,11 +30,11 @@
 List EC2 Instances in us-east-1:
 ```bash
   ./aws_resource_list.sh us-east-1 ec2
-
+```
 List all resources in us-west-2:
 ```bash
   ./aws_resource_list.sh us-west-2 all
-
+```
 ## Supported Services
 The script supports the following AWS services:
 -   Compute: EC2, Lambda
@@ -49,7 +49,7 @@ The script supports the following AWS services:
 For a complete list of supported services and usage instructions, run:
 ```bash
 ./aws_resource_list.sh --help
-
+```
 ## Output
 
 The script outputs JSON-formatted data for each service, making it easy to analyze or save to a file.
@@ -73,6 +73,7 @@ Example Output for EC2 Instances:
     }
   ]
 }
+```
 
 ## Troubleshooting
 - AWS CLI Not Installed: Make sure the AWS CLI is installed and accessible in your PATH.
