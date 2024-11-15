@@ -20,7 +20,9 @@
 - AWS credentials configured (use `aws configure` to set up access keys and default region).
 
 ## Usage
+```
 ./GET_aws_resource_audit.sh <aws_region> <aws_service|all>
+```
 
 ## Arguments
 - <aws_region>: AWS region code (e.g., us-east-1, eu-west-1).
